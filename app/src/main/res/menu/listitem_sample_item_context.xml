@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/listitem_sample_item_context_edit"
+        android:title="@string/listitem_sample_item_context_edit"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction"/>
+
+    <item
+        android:id="@+id/listitem_sample_item_context_delete"
+        android:title="@string/listitem_sample_item_context_delete"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction"/>
+</menu>
