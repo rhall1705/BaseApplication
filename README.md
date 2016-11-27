@@ -16,6 +16,14 @@ This repository exists as a showcase for base classes used in my applications to
 
 * Contains all the same methods as BaseActivity except for Toolbar ones. Note that, particularly for its ProgressDialog methods, this class assumes that the fragment is placed within a container in an Activity deriving from BaseActivity.
 
+### BaseRecyclerViewAdapter and BaseViewHolder
+
+* Abstracts most of the logic involved with setting up an adapter and its respective viewholders for a RecyclerView. 
+* Generics allow these adapters and viewholders to be based on the data the list is displaying.
+* Provides simple callbacks within the adapter to define layout files and viewholders based on view type.
+* Provides listeners for item clicks, child item clicks, and long presses, so that the container of an adapter (i.e. Activity or Fragment) may define their behavior rather than the adapter.
+* Provides convenience methods for modifying the adapter's dataset as well as providing context menus
+
 ### BaseDialogFragment
 
 * Callbacks - provided for positive, negative, and neutral clicks, in additional to dismiss action. These callbacks are designed to be implemented by the Activity or Fragment that showed the dialog, and this is encouraged by show methods that take an instance of BaseActivity or BaseFragment as an argument as these classes implement the callbacks by default. Note that attempting to show the dialog from any containing Activity or Fragment that does not implement the callbacks will result in an IllegalStateException. Also note that the callbacks switch off the result of the abstract method tag().
